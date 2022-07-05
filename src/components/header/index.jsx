@@ -19,12 +19,12 @@ const Header = () => {
   // RENDER
   return (
     <div className="container header_container">
-      <h1> Hello, I'm Junaid Razaq</h1>
+      <h1> Junaid Razaq Porfolio</h1>
 
-      <div className="header_paragraph">
+      <div>
         <h2>
-          Take a look at some of the projects I have worked on over the last
-          couple of years
+          Take a look at some of the projects I have <br /> worked on over the
+          last couple of years
         </h2>
       </div>
 

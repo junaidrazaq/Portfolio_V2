@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --color-bg: #fafafa;
+  --color-text: #333;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --color-primary: #ff5a5f;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: "75%";
+  --container-width-md: "86%";
+  --container-width-sm: "90%";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+/* ============ GENERAL_STYLES ============ */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* ======== MEDIA QUERIES (LARGE DEVICES) ======== */
+@media (min-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+/* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media (min-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+}

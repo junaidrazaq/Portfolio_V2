@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "./components/header";
 
 const App = () => {
   return (
-    <div className="container">
-      <h1>Welcome to my portfolio!</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 

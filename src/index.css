@@ -8,16 +8,16 @@
 }
 
 :root {
-  --color-bg: #fafafa;
-  --color-text: #333;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-bg: #555;
+  --color-text: #fff;
+  --color-light: rgba(255, 255, 255, 0.8);
   --color-primary: #ff5a5f;
 
   --transition: all 400ms ease;
 
-  --container-width-lg: "75%";
-  --container-width-md: "86%";
-  --container-width-sm: "90%";
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 95%;
 }
 
 html {
@@ -37,17 +37,19 @@ body {
   margin: 0 auto;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h1 {
   font-size: 2.5rem;
+  font-weight: 500;
 }
 
 a {
@@ -60,15 +62,26 @@ a:hover {
 }
 
 /* ======== MEDIA QUERIES (LARGE DEVICES) ======== */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
 }
 
 /* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 }

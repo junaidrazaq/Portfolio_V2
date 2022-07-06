@@ -75,7 +75,7 @@ button {
 }
 
 button:hover {
-  background: var(--color-success);
+  background: var(--color-light);
 }
 
 .light {

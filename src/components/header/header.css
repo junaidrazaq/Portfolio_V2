@@ -19,3 +19,21 @@
   gap: 1rem;
   margin-top: 1rem;
 }
+
+.header_social_media {
+  position: absolute;
+  left: 10px !important;
+  bottom: 10px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.header_links_button {
+  transition: var(--transition);
+  color: var(--color-primary);
+}
+
+.header_links_button:hover {
+  color: var(--color-light);
+  cursor: pointer;
+}

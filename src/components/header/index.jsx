@@ -29,48 +29,51 @@ const Header = () => {
 
   // RENDER
   return (
-    <div className="container header_container">
-      <h1> Junaid Razaq Porfolio</h1>
+    <>
+      {/* <div className="background_image" /> */}
+      <div className="container header_container background_image">
+        <h1>Hi, I'm Junaid Razaq</h1>
 
-      <div className="header_social_media">
-        <div // Github Work Link
-          onClick={() => _handleLinkPress(githubCasualLink)}
-          className="header_links_button"
-        >
-          <FaGithubSquare size={25} />
+        <div className="header_social_media">
+          <div // Github Work Link
+            onClick={() => _handleLinkPress(githubCasualLink)}
+            className="header_links_button"
+          >
+            <FaGithubSquare size={25} />
+          </div>
+
+          <div // LinkedIn Link
+            className="header_links_button"
+            onClick={() => _handleLinkPress(linkedInLink)}
+          >
+            <FaLinkedin size={25} />
+          </div>
+
+          <div // Github Casual Link
+            onClick={() => _handleLinkPress(githubWorkLink)}
+            className="header_links_button"
+          >
+            <FaGithub size={23} />
+          </div>
         </div>
 
-        <div // LinkedIn Link
-          className="header_links_button"
-          onClick={() => _handleLinkPress(linkedInLink)}
-        >
-          <FaLinkedin size={25} />
+        <div>
+          <h2>
+            Take a look at some of the projects I have <br /> worked on over the
+            last couple of years
+          </h2>
         </div>
 
-        <div // Github Casual Link
-          onClick={() => _handleLinkPress(githubWorkLink)}
-          className="header_links_button"
-        >
-          <FaGithub size={23} />
+        <div className="header_buttons">
+          <button onClick={() => _onDownload()}>Download CV</button>
+          <button onClick={() => _onContact()}>Get in touch</button>
+        </div>
+
+        <div className="header_job_title">
+          <h3 className="light">Web/Mobile Developer</h3>
         </div>
       </div>
-
-      <div>
-        <h2>
-          Take a look at some of the projects I have <br /> worked on over the
-          last couple of years
-        </h2>
-      </div>
-
-      <div className="header_job_title">
-        <h3 className="light">Javascript Developer</h3>
-      </div>
-
-      <div className="header_buttons">
-        <button onClick={() => _onDownload()}>Download CV</button>
-        <button onClick={() => _onContact()}>Get in touch</button>
-      </div>
-    </div>
+    </>
   );
 };
 

@@ -70,7 +70,7 @@ const Header = () => {
         </div>
 
         <div className="header_job_title">
-          <h3 className="light">Web/Mobile Developer</h3>
+          <h3 className="header_job_title_text">Web/Mobile Developer</h3>
         </div>
       </div>
     </>

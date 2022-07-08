@@ -1,13 +1,114 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --color-bg: rgb(255, 255, 255);
+  --color-text: rgb(83, 81, 81);
+  --color-light: rgba(83, 81, 81, 0.6);
+  --color-primary: #ff5a5f;
+  --color-success: #00b300;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 95%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+/* ============ GENERAL_STYLES ============ */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.heading_text {
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  text-shadow: -2px 2px 1px rgb(0 0 0 / 52%);
+}
+
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: #bbb9b9;
+}
+
+button {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover {
+  background: var(--color-light);
+}
+
+.light {
+  color: var(--color-light);
+}
+
+/* ======== MEDIA QUERIES (LARGE DEVICES) ======== */
+@media (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+/* ======== MEDIA QUERIES (MEDIUM DEVICES) ======== */
+@media (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
 }

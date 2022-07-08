@@ -16,7 +16,7 @@
 
   --transition: all 400ms ease;
 
-  --container-width-lg: 75%;
+  --container-width-lg: 65%;
   --container-width-md: 86%;
   --container-width-sm: 95%;
 }
@@ -89,9 +89,24 @@ button:hover {
 }
 
 /* ======== MEDIA QUERIES (LARGE DEVICES) ======== */
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .container {
     width: var(--container-width-md);
+  }
+}
+
+/* ======== MEDIA QUERIES (ALMOST MEDIUM DEVICES) ======== */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 }
 

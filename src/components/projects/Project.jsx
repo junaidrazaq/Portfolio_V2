@@ -1,7 +1,7 @@
 import React from "react";
 import "./projects.css";
 
-const Project = ({ heading, subHead, body, src, divider }) => {
+const Project = ({ heading, subHead, body, src, divider, onPress, demo }) => {
   return (
     <>
       <div className="projects_container_grid_item">
@@ -17,8 +17,7 @@ const Project = ({ heading, subHead, body, src, divider }) => {
         </div>
 
         <div className="projects-buttons">
-          <button>Demo</button>
-          <button>GitHub</button>
+          <button onClick={() => onPress(demo)}>Demo</button>
         </div>
       </div>
       {divider && <div className="projects_divider" />}

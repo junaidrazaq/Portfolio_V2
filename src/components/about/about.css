@@ -110,9 +110,6 @@
 .divider {
   width: 90%;
   height: 2px;
-  background-color: rgb(243, 240, 240);
-  margin-top: 5rem;
-  margin-bottom: 3.7rem;
-  margin-right: auto;
-  margin-left: auto;
+  background-color: rgb(225, 225, 225);
+  margin: 3.7rem auto;
 }

@@ -38,6 +38,10 @@ body {
   margin: 0 auto;
 }
 
+.dark_text {
+  color: #333;
+}
+
 h2,
 h3,
 h4,
@@ -78,6 +82,11 @@ button {
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
+}
+@media (max-width: 1440px) {
+  button {
+    font-size: 0.9rem;
+  }
 }
 
 button:hover {

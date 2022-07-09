@@ -83,6 +83,11 @@ button {
   cursor: pointer;
   transition: var(--transition);
 }
+@media (max-width: 1440px) {
+  button {
+    font-size: 0.9rem;
+  }
+}
 
 button:hover {
   background: var(--color-light);

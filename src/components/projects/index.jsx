@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <div className="container projects_container">
       <h3 className="dark_text project_heading_text">
-        Here's what i've been working on
+        Here's what I've been working on
       </h3>
       <div className="projects_container_grid">
         <Project

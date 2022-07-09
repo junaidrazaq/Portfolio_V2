@@ -1,26 +1,28 @@
 import React from "react";
 import "./projects.css";
-import NearU from "../../assets/Images/NearU.png";
 
-const Project = ({ heading, subHead, body }) => {
+const Project = ({ heading, subHead, body, src, divider }) => {
   return (
-    <div className="projects_container_grid_item">
-      <h3 className="project_heading_text">{heading}</h3>
+    <>
+      <div className="projects_container_grid_item">
+        <h3 className="dark_text project_sub_heading_text">{heading}</h3>
 
-      <div className="projects_container_grid_item_image">
-        <img className="project_image" src={NearU} alt="project_image" />
-      </div>
+        <div className="projects_container_grid_item_image">
+          <img className="project_image" src={src} alt="project_image" />
+        </div>
 
-      <div className="projects_container_grid_item_text">
-        <h3 className="project_body_text">{subHead}</h3>
-        <h3 className="project_body_text">{body}</h3>
-      </div>
+        <div className="projects_container_grid_item_text">
+          <h3 className="dark_text project_body_text">{subHead}</h3>
+          <h3 className="dark_text project_body_text">{body}</h3>
+        </div>
 
-      <div className="projects-buttons">
-        <button>Demo</button>
-        <button>GitHub</button>
+        <div className="projects-buttons">
+          <button>Demo</button>
+          <button>GitHub</button>
+        </div>
       </div>
-    </div>
+      {divider && <div className="projects_divider" />}
+    </>
   );
 };
 

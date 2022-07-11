@@ -1,21 +1,17 @@
 import React from "react";
 import "./about.css";
 import ProfilePic from "../../assets/Images/ProfilePic.png";
+import Skills from "./Skills";
+import { allSkills } from "./AllSkills";
 
 const About = () => {
   return (
     <>
       <div className="container about_container">
-        <div className="about_skills_container_top">
-          <h2 className="about_skills">HTML</h2>
-          <h2 className="about_skills">CSS</h2>
-          <h2 className="about_skills">JavaScript</h2>
-          <h2 className="about_skills">ReactJS</h2>
-          <h2 className="about_skills">React-native</h2>
-          <h2 className="about_skills">GIT</h2>
-          <h2 className="about_skills">xCode</h2>
-          <h2 className="about_skills">Android Studio</h2>
-        </div>
+        <Skills
+          className="about_skills_container_top"
+          skills={allSkills.slice(0, 8)}
+        />
 
         <div className="about_content_container">
           <div className="about_img_container">
@@ -33,17 +29,12 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about_skills_container_bottom">
-          <h2 className="about_skills">NodeJS</h2>
-          <h2 className="about_skills">SQL</h2>
-          <h2 className="about_skills">React-testing-library</h2>
-          <h2 className="about_skills">REST API</h2>
-          <h2 className="about_skills">JEST</h2>
-          <h2 className="about_skills">FireBase</h2>
-          <h2 className="about_skills">GitHub</h2>
-          <h2 className="about_skills">Android Studio</h2>
-        </div>
+        <Skills
+          className="about_skills_container_bottom"
+          skills={allSkills.slice(8, 15)}
+        />
       </div>
+
       <div className="divider"></div>
     </>
   );

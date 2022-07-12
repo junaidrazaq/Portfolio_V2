@@ -97,6 +97,14 @@ button:hover {
   color: var(--color-light);
 }
 
+.section_heading_text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  padding-left: 2px;
+}
+
 /* ======== MEDIA QUERIES (LARGE DEVICES) ======== */
 @media (max-width: 1440px) {
   .container {
@@ -134,5 +142,8 @@ button:hover {
   h6 {
     font-size: 1rem;
     line-height: 1.4rem;
+  }
+  .section_heading_text {
+    font-size: 1.2rem;
   }
 }

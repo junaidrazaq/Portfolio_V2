@@ -4,7 +4,7 @@ import ProfilePic from "../../assets/Images/ProfilePic.png";
 import Skills from "./Skills";
 import { allSkills } from "./AllSkills";
 import { MdOutlineComputer } from "react-icons/md";
-import useWindowDimensions from "../Hooks";
+import useWindowDimensions from "../_Hooks";
 
 const About = () => {
   const { width } = useWindowDimensions();

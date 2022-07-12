@@ -47,13 +47,6 @@
 }
 
 /* ==== TEXT STYLES ==== */
-.project_heading_text {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-  padding-left: 2px;
-}
 .project_sub_heading_text {
   font-weight: 800;
   margin-bottom: 1.5rem;

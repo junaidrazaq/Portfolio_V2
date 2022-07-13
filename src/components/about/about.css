@@ -208,11 +208,3 @@
     text-align: start;
   }
 }
-
-/* ==== Other_Styles ==== */
-.divider {
-  width: 90%;
-  height: 2px;
-  background-color: rgb(225, 225, 225);
-  margin: 2.2rem auto;
-}

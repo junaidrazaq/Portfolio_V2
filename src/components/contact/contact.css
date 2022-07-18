@@ -1,0 +1,109 @@
+.contact_map_container {
+  height: 31.3rem;
+  width: 100%;
+  display: flex;
+  margin: 1.5rem auto;
+  gap: 1rem;
+  flex-direction: row-reverse;
+}
+@media (max-width: 650px) {
+  .contact_map_container {
+    height: 17.3rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* ==== Form_Styles ==== */
+.contact_form_container {
+  width: 100%;
+  margin: 1rem auto;
+}
+@media (max-width: 1440px) {
+  .contact_form_container {
+    width: 75%;
+  }
+}
+@media (max-width: 650px) {
+  .contact_form_container {
+    width: 100%;
+  }
+}
+
+.contact_form_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact_form_input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  display: inline-flex;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.contact_form_input > label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  width: 40%;
+}
+.contact_form_input > input,
+textarea {
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0.2rem;
+}
+
+/* ==== Button Styles ==== */
+.contact_form_button {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.128);
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 1rem;
+  display: inline-flex;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+  background-color: #fff;
+}
+.contact_form_button:hover {
+  cursor: pointer;
+  transform: skew(-15deg);
+  font-weight: 500;
+}
+
+/* === Phone Number Styles === */
+.contact_number_container {
+  margin-top: 1rem;
+}
+.contact_heading,
+.contact_number {
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-family: Roboto, sans-serif;
+  color: #555 !important;
+  padding-left: 5px;
+}
+
+.contact_number {
+  font-size: 1rem;
+}
+
+/* === Loader === */
+.loader_container {
+  position: relative;
+}
+.loader_wrapper {
+  position: absolute;
+  bottom: 11.5px;
+  right: 5%;
+}

@@ -12,31 +12,34 @@ const Projects = () => {
   };
 
   return (
-    <div className="container projects_container">
-      <h3 className="dark_text section_heading_text">
-        Here's what I've been working on
-      </h3>
-      <div className="projects_container_grid">
-        <Project
-          heading="NearU"
-          subHead="CoWorking Space App"
-          body="Tech Stack: React Native, Laravel, Php, MySql, etc."
-          src={NearU}
-          onPress={_onPress}
-          demo="https://nearu.io"
-          divider
-        />
+    <>
+      <div className="container projects_container">
+        <h3 className="dark_text section_heading_text">
+          Here's what I've been working on
+        </h3>
+        <div className="projects_container_grid">
+          <Project
+            heading="NearU"
+            subHead="CoWorking Space App"
+            body="Tech Stack: React Native, Laravel, Php, MySql, etc."
+            src={NearU}
+            onPress={_onPress}
+            demo="https://nearu.io"
+            divider
+          />
 
-        <Project
-          heading="ZAP-D"
-          subHead="Social Media App "
-          body="Tech Stack: ReactJS, React Native and Firebase"
-          src={ZAPD}
-          onPress={_onPress}
-          demo="https://zap-d.co"
-        />
+          <Project
+            heading="ZAP-D"
+            subHead="Social Media App "
+            body="Tech Stack: ReactJS, React Native and Firebase"
+            src={ZAPD}
+            onPress={_onPress}
+            demo="https://zap-d.co"
+          />
+        </div>
       </div>
-    </div>
+      <div className="divider"></div>
+    </>
   );
 };
 

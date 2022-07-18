@@ -105,6 +105,13 @@ button:hover {
   padding-left: 2px;
 }
 
+.divider {
+  width: 90%;
+  height: 2px;
+  background-color: rgb(225, 225, 225);
+  margin: 2.2rem auto;
+}
+
 /* ======== MEDIA QUERIES (LARGE DEVICES) ======== */
 @media (max-width: 1440px) {
   .container {

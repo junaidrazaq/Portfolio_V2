@@ -127,6 +127,7 @@
 @media (max-width: 500px) {
   .experience_container {
     flex-direction: column;
+    margin: 0 auto;
   }
   .experience_item {
     width: 100%;
@@ -207,12 +208,4 @@
   .experience_text_container {
     text-align: start;
   }
-}
-
-/* ==== Other_Styles ==== */
-.divider {
-  width: 90%;
-  height: 2px;
-  background-color: rgb(225, 225, 225);
-  margin: 2.2rem auto;
 }

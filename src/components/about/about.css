@@ -127,6 +127,7 @@
 @media (max-width: 500px) {
   .experience_container {
     flex-direction: column;
+    margin: 0 auto;
   }
   .experience_item {
     width: 100%;
